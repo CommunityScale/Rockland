@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modern dashboard interface for data visualization and analytics. Clean, responsive design with real-time insights and comprehensive reporting tools.">
+  <meta name="keywords" content="dashboard, analytics, data visualization, business intelligence, reporting, charts, metrics">
+  <meta name="author" content="Rockland Housing Plan Dashboard">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="en">
+  <meta name="theme-color" content="#3B82F6">
+  <meta name="color-scheme" content="light dark">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://https://communityscale.github.io/Rockland/">
+
+  <!-- Title -->
+  <title>Rockland Housing Plan Dashboard</title>
+
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Rockland Housing Plan Dashboard">
+  <meta property="og:title" content="Rockland Housing Plan Dashboard">
+  <meta property="og:description" content="Dashboard interface for data visualization and analytics. Real-time insights with intuitive design.">
+  <meta property="og:url" content="https://raw.githubusercontent.com/CommunityScale/media-kit/main/png/communityscale-social-card-black-bg.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/CommunityScale/media-kit/main/png/communityscale-social-card-black-bg.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Rockland Housing Plan">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rockland Housing Plan Dashboard">
+  <meta name="twitter:description" content="Dashboard interface for data visualization and analytics. Real-time insights with intuitive design.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/CommunityScale/media-kit/main/png/communityscale-social-card-black-bg.png">
+  <meta name="twitter:image:alt" content="Rockland Housing Plan Dashboard">
+  <meta name="twitter:site" content="@communityscale">
+  <meta name="twitter:creator" content="@communityscale">
+
+  <!-- Security Headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+  <!-- Performance & Caching -->
+  <meta http-equiv="Cache-Control" content="public, max-age=31536000">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+  <link rel="dns-prefetch" href="//www.googletagmanager.com">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="192x192" href="https://raw.githubusercontent.com/CommunityScale/media-kit/main/favicon/communityscale-favicon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="https://raw.githubusercontent.com/CommunityScale/media-kit/main/favicon/communityscale-favicon-512.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="https://raw.githubusercontent.com/CommunityScale/media-kit/main/favicon/communityscale-favicon-192.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="https://raw.githubusercontent.com/CommunityScale/media-kit/main/svg/communityscale-symbol-black.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#000000">
+
+  <!-- Web App Manifest
+  <link rel="manifest" href="/manifest.json">
+  <meta name="application-name" content="HF Mock Dashboard">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="HF Dashboard">
+   -->
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID', {
+      page_title: 'Dashboard',
+      page_location: window.location.href,
+      send_page_view: true,
+      anonymize_ip: true,
+      allow_google_signals: false,
+      cookie_flags: 'SameSite=Strict;Secure'
+    });
+  </script>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Rockland Housing Plan Dashboard",
+    "description": "Interactive dashboard supporting the City of Rockland, Maine Housing Plan.",
+    "url": "https://communityscale.github.io/Rockland/",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web Browser",
+    "inLanguage": "en-US",
+    "author": {
+      "@type": "Organization",
+      "name": "CommunityScale",
+      "url": "https://communityscale.io/"
+    },
+    "publisher": {
+      "@type": "GovernmentOrganization",
+      "name": "City of Rockland, Maine",
+      "url": "https://rocklandmaine.gov/"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "sameAs": [
+      "https://twitter.com/communityscale"
+    ],
+    "mainEntity": {
+      "@type": "WebPage",
+      "name": "Rockland Housing Plan Dashboard",
+      "description": "Dashboard page."
+    }
+  }
+  </script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./tailwind.config.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'sans': ['Roboto', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Arial', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Material Icons CDN -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    /* Additional styling to match the original SVG appearance */
+    .material-icons-outlined {
+      font-size: 1.25rem;
+      /* Equivalent to h-5 w-5 */
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+
+    /* Critical CSS for performance */
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+      /* Offset for sticky header */
+    }
+
+    body {
+      font-display: swap;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 min-h-screen">
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8" aria-label="Global">
+      <div class="flex lg:flex-1">
+        <a href="https://rocklandmaine.gov/" class="-m-1.5 p-1.5">
+          <span class="sr-only">Rockland Housing Plan Dashboard</span>
+          <img class="h-8 w-auto" src="images/client/client-logo.png" alt="" />
+        </a>
+        <h1 class="hidden lg:block ml-4 text-xl font-bold text-gray-900 self-center">Rockland Housing Plan</h1>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-6">
+        <a href="#" class="text-sm/6 font-semibold text-gray-900 hover:bg-#3a8155 hover:shadow-sm px-3 py-2 rounded-md transition-all duration-200 flex items-center gap-1">
+          <span class="material-icons-outlined text-sm">arrow_upward_alt</span>
+          Top
+        </a>
+      </div>
+
+      <div class="flex lg:hidden">
+        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" onclick="toggleMobileMenu()">
+          <span class="sr-only">Open main menu</span>
+          <span class="material-icons-outlined text-2xl" aria-hidden="true">menu</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="lg:hidden hidden" role="dialog" aria-modal="true">
+      <div class="fixed inset-0 z-50"></div>
+      <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div class="flex items-center gap-x-6">
+          <a href="https://rocklandmaine.gov/" class="-m-1.5 p-1.5">
+            <span class="sr-only">Rockland Housing Plan Dashboard</span>
+            <img class="h-8 w-auto" src="images/client/client-logo.png" alt="" />
+          </a>
+          <h1 class="text-xl font-bold text-gray-900">Rockland Housing Plan</h1>
+          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" onclick="toggleMobileMenu()">
+            <span class="sr-only">Close menu</span>
+            <span class="material-icons-outlined text-2xl" aria-hidden="true">close</span>
+          </button>
+        </div>
+        <div class="mt-6 flow-root">
+          <div class="-my-6 divide-y divide-gray-500/10">
+            <div class="space-y-2 py-6">
+              <a href="#top" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Top</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Intro section -->
+  <div class="relative border-t border-b border-gray-200 pt-20 pb-20 bg-white overflow-hidden">
+    <!-- Background image with gradient overlay -->
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('images/client/cover-bg.jpg');">
+      <div class="absolute inset-0 bg-gradient-to-r from-white/95 to-white/85"></div>
+    </div>
+    <!-- Content -->
+    <div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="sm:mx-auto sm:max-w-3xl px-4 sm:px-6">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl text-gray-900 mb-6 leading-tight">
+          <span class="font-light tracking-wide">Rockland</span><br>
+          <span class="font-bold">Housing Plan Dashboard</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-700 leading-relaxed">This dashboard shares the current status of Rockland's <a href="https://rocklandmaine.gov/381/Housing" target="_blank">housing plan</a> and housing bond investments.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Main Content -->
+  <main class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8 space-y-6">
+
+    <!-- Project Purpose Card -->
+    <div class="sm:mx-auto sm:max-w-3xl divide-y divide-gray-200 overflow-hidden sm:rounded-lg bg-white shadow-sm">
+      <div class="px-4 py-5 sm:px-6">
+      <h3 class="text-3xl font-semibold leading-9 text-gray-900">What is the Housing Plan and Bond?</h3>
+      </div>
+      <div class="px-4 py-5 sm:p-6">
+      <div>
+        <p class="text-gray-700 pb-2">The City of Rockland's Housing Plan ____ _____ _____ _____  ____ _____ _____ _____  ____ _____ _____ _____  ____ _____ _____ _____  ____ _____ _____ _____ </p>
+      </div>
+      <div class="px-4 py-5 sm:p-6">
+        <h3 class="text-lg font-medium leading-6 text-gray-900">Housing goals:</h3>
+        <dl class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-4">
+        <div class="group overflow-hidden rounded-lg bg-white px-4 py-5 shadow-sm sm:p-6 dark:bg-gray-800/75 dark:inset-ring dark:inset-ring-white/10 hover:bg-[#3a8155] transition-all duration-200 transform hover:scale-105">
+          <dt class="truncate text-sm font-medium text-gray-500 dark:text-gray-400 transition-colors duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 group-hover:stroke-white transition-colors duration-200">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
+          </dt>
+          <dd class="mt-1 text-1xl font-semibold tracking-tight text-gray-900 dark:text-white group-hover:text-white transition-colors duration-200">Understand current housing conditions and future needs.</dd>
+        </div>
+        <div class="group overflow-hidden rounded-lg bg-white px-4 py-5 shadow-sm sm:p-6 dark:bg-gray-800/75 dark:inset-ring dark:inset-ring-white/10 hover:bg-[#3a8155] transition-all duration-200 transform hover:scale-105">
+          <dt class="truncate text-sm font-medium text-gray-500 dark:text-gray-400 transition-colors duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 group-hover:stroke-white transition-colors duration-200">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
+          </dt>
+          <dd class="mt-1 text-1xl font-semibold tracking-tight text-gray-900 dark:text-white group-hover:text-white transition-colors duration-200">Engage residents and stakeholders to understand community priorities.</dd>
+        </div>
+        <div class="group overflow-hidden rounded-lg bg-white px-4 py-5 shadow-sm sm:p-6 dark:bg-gray-800/75 dark:inset-ring dark:inset-ring-white/10 hover:bg-[#3a8155] transition-all duration-200 transform hover:scale-105">
+          <dt class="truncate text-sm font-medium text-gray-500 dark:text-gray-400 transition-colors duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 group-hover:stroke-white transition-colors duration-200">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
+          </dt>
+          <dd class="mt-1 text-1xl font-semibold tracking-tight text-gray-900 dark:text-white group-hover:text-white transition-colors duration-200">Identify housing production targets that meet local needs.</dd>
+        </div>
+        <div class="group overflow-hidden rounded-lg bg-white px-4 py-5 shadow-sm sm:p-6 dark:bg-gray-800/75 dark:inset-ring dark:inset-ring-white/10 hover:bg-[#3a8155] transition-all duration-200 transform hover:scale-105">
+          <dt class="truncate text-sm font-medium text-gray-500 dark:text-gray-400 transition-colors duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 group-hover:stroke-white transition-colors duration-200">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
+          </dt>
+          <dd class="mt-1 text-1xl font-semibold tracking-tight text-gray-900 dark:text-white group-hover:text-white transition-colors duration-200">Develop recommendations for policy and planning improvements.</dd>
+        </div>
+        </dl>
+      </div>
+      </div>
+    </div>
+
+    <!-- Section Divider: Metrics and progress -->
+    <div class="sm:mx-auto sm:max-w-3xl py-12">
+      <div class="text-center">
+        <h2 class="text-4xl font-bold text-gray-900 mb-3">Metrics and progress</h2>
+        <p class="text-lg text-gray-600">Tracking Rockland's housing outcomes</p>
+        <div class="mt-6 mx-auto w-24 h-1 bg-gradient-to-r from-[#3a8155] to-[#003e70] rounded-full"></div>
+      </div>
+    </div>
+
+    <!-- Housing Production -->
+    <div class="sm:mx-auto sm:max-w-3xl divide-y divide-gray-200 overflow-hidden sm:rounded-lg bg-white shadow-sm">
+      <div class="px-4 py-5 sm:px-6">
+        <h3 class="text-3xl font-semibold leading-9 text-gray-900">Housing Production</h3>
+      </div>
+      <div class="px-4 py-5 sm:p-6">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="md:w-2/6">
+            <p class="text-gray-700 pb-2">Last update: 2025-10-31</p>
+            <p class="text-gray-700 pb-2">Tracking new housing units by building type and area median income level.</p>
+          </div>
+          <div class="md:w-4/6">
+            <!-- Add your Datawrapper chart or other visualization here -->
+            <div class="bg-gray-100 rounded-lg p-8 text-center">
+              <p class="text-gray-500">Chart placeholder</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="px-4 py-5 sm:p-6">
+        <div>
+          <div class="flow-root">
+            <div class="overflow-x-auto">
+              <div class="inline-block min-w-full align-middle">
+                <table class="min-w-full divide-y divide-gray-300">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="py-3.5 pr-3 text-left text-sm font-semibold text-gray-900 align-bottom">Type</th>
+                      <th scope="col" class="px-2 py-3.5 text-right text-sm font-semibold text-gray-900 align-bottom">Units</th>
+                      <th scope="col" class="px-2 py-3.5 text-right text-sm font-semibold text-gray-900 align-bottom">Buildings</th>
+                      <th scope="col" class="px-2 py-3.5 text-right text-sm font-semibold text-gray-900 align-bottom">Below 50% AMI</th>
+                      <th scope="col" class="px-2 py-3.5 text-right text-sm font-semibold text-gray-900 align-bottom">50-80% AMI</th>
+                      <th scope="col" class="px-2 py-3.5 text-right text-sm font-semibold text-gray-900 align-bottom">80-100% AMI</th>
+                      <th scope="col" class="px-2 py-3.5 text-right text-sm font-semibold text-gray-900 align-bottom">100-120% AMI</th>
+                      <th scope="col" class="px-2 py-3.5 text-right text-sm font-semibold text-gray-900 align-bottom">Market Rate</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-200 bg-white">
+                    <tr>
+                      <td class="py-2 pr-3 text-sm font-medium whitespace-nowrap text-gray-900">Single Family</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">12</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">12</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">2</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">10</td>
+                    </tr>
+                    <tr>
+                      <td class="py-2 pr-3 text-sm font-medium whitespace-nowrap text-gray-900">Two Family</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">4</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">2</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">4</td>
+                    </tr>
+                    <tr>
+                      <td class="py-2 pr-3 text-sm font-medium whitespace-nowrap text-gray-900">3-6 units</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">4</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">1</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">4</td>
+                    </tr>
+                    <tr>
+                      <td class="py-2 pr-3 text-sm font-medium whitespace-nowrap text-gray-900">6-12 units</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">9</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">1</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">4</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">5</td>
+                    </tr>
+                    <tr>
+                      <td class="py-2 pr-3 text-sm font-medium whitespace-nowrap text-gray-900">13+ units</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">18</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">1</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">12</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">6</td>
+                    </tr>
+                    <tr class="border-t-2 border-gray-900">
+                      <td class="py-2 pr-3 text-sm font-bold whitespace-nowrap text-gray-900">TOTAL</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-bold text-gray-900">47</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-bold text-gray-900">17</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-bold text-gray-900">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-bold text-gray-900">12</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-bold text-gray-900">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-bold text-gray-900">6</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-bold text-gray-900">29</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Housing Development Programs -->
+    <div class="sm:mx-auto sm:max-w-3xl divide-y divide-gray-200 overflow-hidden sm:rounded-lg bg-white shadow-sm">
+      <div class="px-4 py-5 sm:px-6">
+        <h3 class="text-3xl font-semibold leading-9 text-gray-900">Housing Development Programs</h3>
+      </div>
+      <div class="px-4 py-5 sm:p-6">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="md:w-2/6">
+            <p class="text-gray-700 pb-2">Last update: 2025-10-31</p>
+            <p class="text-gray-700 pb-2">Tracking housing programs, units renovated or created, investments, and funding sources.</p>
+          </div>
+          <div class="md:w-4/6">
+            <!-- Add your chart here -->
+            <div class="bg-gray-100 rounded-lg p-8 text-center">
+              <p class="text-gray-500">Chart placeholder - Add your household structure chart here</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="px-4 py-5 sm:p-6">
+        <div>
+          <div class="flow-root">
+            <div class="overflow-x-auto">
+              <div class="inline-block min-w-full align-middle">
+                <table class="min-w-full divide-y divide-gray-300">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="py-3.5 pr-3 text-left text-sm font-semibold text-gray-900 align-bottom">Name</th>
+                      <th scope="col" class="px-2 py-3.5 text-left text-sm font-semibold text-gray-900 align-bottom">Type</th>
+                      <th scope="col" class="px-2 py-3.5 text-right text-sm font-semibold text-gray-900 align-bottom">Units Renovated</th>
+                      <th scope="col" class="px-2 py-3.5 text-right text-sm font-semibold text-gray-900 align-bottom">Units Created</th>
+                      <th scope="col" class="px-2 py-3.5 text-right text-sm font-semibold text-gray-900 align-bottom">Units Preserved</th>
+                      <th scope="col" class="px-2 py-3.5 text-right text-sm font-semibold text-gray-900 align-bottom">Investment</th>
+                      <th scope="col" class="px-2 py-3.5 text-right text-sm font-semibold text-gray-900 align-bottom">Cost/Unit</th>
+                      <th scope="col" class="px-2 py-3.5 text-left text-sm font-semibold text-gray-900 align-bottom">Primary Source</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-200 bg-white">
+                    <tr>
+                      <td class="py-2 pr-3 text-sm font-medium text-gray-900">Affordable Housing Trust Fund</td>
+                      <td class="px-2 py-2 text-sm text-gray-500">Trust Fund</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">4</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">2</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$120K</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$20K</td>
+                      <td class="px-2 py-2 text-sm text-gray-500">Bond</td>
+                    </tr>
+                    <tr>
+                      <td class="py-2 pr-3 text-sm font-medium text-gray-900">First Time Homebuyer Program</td>
+                      <td class="px-2 py-2 text-sm text-gray-500">Down Payment Assistance</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">4</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$100K</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$25K</td>
+                      <td class="px-2 py-2 text-sm text-gray-500">Bond</td>
+                    </tr>
+                    <tr>
+                      <td class="py-2 pr-3 text-sm font-medium text-gray-900">Affordable Housing Recapitalization Program</td>
+                      <td class="px-2 py-2 text-sm text-gray-500">Renovation Assistance</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">8</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$150K</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$18.8K</td>
+                      <td class="px-2 py-2 text-sm text-gray-500">Bond</td>
+                    </tr>
+                    <tr>
+                      <td class="py-2 pr-3 text-sm font-medium text-gray-900">Low Income Housing Tax Credits</td>
+                      <td class="px-2 py-2 text-sm text-gray-500">Affordable Construction</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">12</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$400K</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$33.3K</td>
+                      <td class="px-2 py-2 text-sm text-gray-500">MaineHousing</td>
+                    </tr>
+                    <tr>
+                      <td class="py-2 pr-3 text-sm font-medium text-gray-900">Rural Affordable Housing Rental Fund</td>
+                      <td class="px-2 py-2 text-sm text-gray-500">Affordable Construction</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">9</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$250K</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$27.8K</td>
+                      <td class="px-2 py-2 text-sm text-gray-500">MaineHousing</td>
+                    </tr>
+                    <tr class="border-t-2 border-gray-900">
+                      <td class="py-2 pr-3 text-sm font-bold text-gray-900">TOTALS</td>
+                      <td class="px-2 py-2 text-sm text-gray-500"></td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-bold text-gray-900">21</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-bold text-gray-900">18</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-bold text-gray-900">0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-bold text-gray-900">$1.02M</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-bold text-gray-900">$124.9K</td>
+                      <td class="px-2 py-2 text-sm text-gray-500"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bond Use and Fiscal Impact -->
+    <div class="sm:mx-auto sm:max-w-3xl divide-y divide-gray-200 overflow-hidden sm:rounded-lg bg-white shadow-sm">
+      <div class="px-4 py-5 sm:px-6">
+        <h3 class="text-3xl font-semibold leading-9 text-gray-900">Bond Use and Fiscal Impact</h3>
+      </div>
+      <div class="px-4 py-5 sm:p-6">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="md:w-2/6">
+            <p class="text-gray-700 pb-2">Last update: 2025-10-31</p>
+            <p class="text-gray-700 pb-2">Tracking bond resource allocation and short and long term fiscal impacts.</p>
+          </div>
+          <div class="md:w-4/6">
+            <!-- Add your chart here -->
+            <div class="bg-gray-100 rounded-lg p-8 text-center">
+              <p class="text-gray-500">Chart placeholder - Add your population aging chart here</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="px-4 py-5 sm:p-6">
+        <div>
+          <div class="flow-root">
+            <div class="overflow-x-auto">
+              <div class="inline-block min-w-full align-middle">
+                <table class="min-w-full divide-y divide-gray-300">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="py-3.5 pr-3 text-left text-sm font-semibold text-gray-900 align-bottom">Use</th>
+                      <th scope="col" class="px-2 py-3.5 text-right text-sm font-semibold text-gray-900 align-bottom">Bond Resources</th>
+                      <th scope="col" class="px-2 py-3.5 text-right text-sm font-semibold text-gray-900 align-bottom">Short Term Net Fiscal Impact Plan</th>
+                      <th scope="col" class="px-2 py-3.5 text-right text-sm font-semibold text-gray-900 align-bottom">Long Term Net Fiscal Impact Plan</th>
+                      <th scope="col" class="px-2 py-3.5 text-right text-sm font-semibold text-gray-900 align-bottom">Short Term Net Fiscal Impact To Date</th>
+                      <th scope="col" class="px-2 py-3.5 text-right text-sm font-semibold text-gray-900 align-bottom">Long Term Net Fiscal Impact To Date</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-200 bg-white">
+                    <tr>
+                      <td class="py-2 pr-3 text-sm font-medium text-gray-900">Affordable Housing Trust Fund</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$300K</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$100K</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$400K</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$100K</td>
+                    </tr>
+                    <tr>
+                      <td class="py-2 pr-3 text-sm font-medium text-gray-900">First Time Homebuyer Program</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$250K</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$100K</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$80K</td>
+                    </tr>
+                    <tr>
+                      <td class="py-2 pr-3 text-sm font-medium text-gray-900">Affordable Housing Recapitalization Program</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$300K</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">-$300K</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$200K</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$0</td>
+                    </tr>
+                    <tr class="border-t-2 border-gray-900">
+                      <td class="py-2 pr-3 text-sm font-bold text-gray-900">Total</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-bold text-gray-900">$850K</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-bold text-gray-900">-$200K</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-bold text-gray-900">$700K</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-bold text-gray-900">$0</td>
+                      <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-bold text-gray-900">$180K</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- No card: Housing Plan Elements Overview -->
+    <div class="sm:mx-auto sm:max-w-3xl py-6">
+      <div class="text-center">
+      <h2 class="text-4xl font-bold text-gray-900 mb-2">Housing Plan Elements Overview</h2>
+      <p class="text-lg text-gray-600">Implementation elements summary</p>
+      </div>
+    </div>
+
+    <!-- Full width table (no card) -->
+    <div class="mx-auto max-w-7xl px-4 lg:px-6">
+      <div class="flow-root">
+      <div class="overflow-x-auto">
+        <div class="inline-block min-w-full align-middle">
+        <table class="min-w-full divide-y divide-gray-300">
+          <thead>
+                <tr>
+                  <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 align-bottom">Implementation Element</th>
+                  <th scope="col" class="px-2 py-3.5 text-left text-sm font-semibold text-gray-900 align-bottom">Process</th>
+                  <th scope="col" class="px-2 py-3.5 text-left text-sm font-semibold text-gray-900 align-bottom">Source of Funding</th>
+                  <th scope="col" class="px-2 py-3.5 text-left text-sm font-semibold text-gray-900 align-bottom">Timeframe</th>
+                  <th scope="col" class="px-2 py-3.5 text-right text-sm font-semibold text-gray-900 align-bottom">Affordable Units Created or Preserved</th>
+                  <th scope="col" class="px-2 py-3.5 text-right text-sm font-semibold text-gray-900 align-bottom">Initial Cost</th>
+                  <th scope="col" class="px-2 py-3.5 text-right text-sm font-semibold text-gray-900 align-bottom">Annual Cost</th>
+                  <th scope="col" class="px-2 py-3.5 text-left text-sm font-semibold text-gray-900 align-bottom">Source of Return</th>
+                  <th scope="col" class="px-2 py-3.5 text-right text-sm font-semibold text-gray-900 align-bottom">Anticipated 10-Year Return</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-200">
+                  <td class="py-2 pl-4 pr-3 text-sm font-medium text-gray-900">Create Rockland Affordable Housing Trust Fund</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">City Council</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">General Fund (existing staff)</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Short</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$0</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$10K</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">N/A</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$0</td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="py-2 pl-4 pr-3 text-sm font-medium text-gray-900">Inventory City-Owned Land and Offer Unused Land for Affordable Housing</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Staff/Council</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">General Fund (existing staff)</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Short</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">25</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$10K</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$0</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">New Investment in Parcels</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$1.5M</td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="py-2 pl-4 pr-3 text-sm font-medium text-gray-900">Create Inclusionary Zoning Ordinance</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">City Council</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">General Fund (existing staff)</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Short</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">10</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$0</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$5K</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Fee in Lieu to AHTF</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$450K</td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="py-2 pl-4 pr-3 text-sm font-medium text-gray-900">Create Expiring Use Retention Fund</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">City Council</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Housing Bond</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Short</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">25</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$500K</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$0</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">N/A</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$0</td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="py-2 pl-4 pr-3 text-sm font-medium text-gray-900">Fund Rockland AHTF</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Bond via Council</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Housing Bond</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Medium</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">10</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$250K</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$100K</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">New Investment in Parcels</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$1.05M</td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="py-2 pl-4 pr-3 text-sm font-medium text-gray-900">Create First Time Homebuyer Down Payment Program</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">City Council</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Housing Bond</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Medium</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">10</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$250K</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$100K</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Increased Property Values</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$100K</td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="py-2 pl-4 pr-3 text-sm font-medium text-gray-900">Offer Bond Funding as part of Affordable Housing Development Capital Stacks</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">City Council</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Housing Bond</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Medium</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">50</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$500K</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$200K</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">New Investment in Parcels</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$3M</td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="py-2 pl-4 pr-3 text-sm font-medium text-gray-900">Continue Land Use Code changes</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Staff/Council</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">N/A</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Medium</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">10</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$0</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$0</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Increased housing production</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$200K</td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="py-2 pl-4 pr-3 text-sm font-medium text-gray-900">Create a Rental Registration Program</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Staff/Council</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Registration Fees</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Medium</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$10K</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$15K</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Registration Fees</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$150K</td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="py-2 pl-4 pr-3 text-sm font-medium text-gray-900">Create an Affordable Housing Rehabilitation program</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Staff/Council</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Housing Bond</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Medium</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">20</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$150K</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$40K</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Stabilized property taxes</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$200K</td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="py-2 pl-4 pr-3 text-sm font-medium text-gray-900">Provide fee reductions for affordable housing</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">City Council</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">General Fund (existing staff)</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">Short</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">0</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$0</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$5K</td>
+                  <td class="px-2 py-2 text-sm text-gray-500">N/A</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap text-gray-500">$0</td>
+                </tr>
+                <tr class="border-t-2 border-gray-900">
+                  <td class="py-2 pl-4 pr-3 text-sm font-bold text-gray-900">TOTAL</td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-bold text-gray-900">160</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-bold text-gray-900">$1.67M</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-bold text-gray-900">$475K</td>
+                  <td class="px-2 py-2 text-sm font-bold text-gray-900">TOTAL RETURN</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-bold text-gray-900">$6.65M</td>
+                </tr>
+                <tr>
+                  <td class="py-2 pl-4 pr-3 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm font-semibold text-gray-900">TOTAL COSTS</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-semibold text-gray-900">$5.95M</td>
+                </tr>
+                <tr>
+                  <td class="py-2 pl-4 pr-3 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm font-semibold text-gray-900">COSTS PER UNIT</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-semibold text-gray-900">$37.2K</td>
+                </tr>
+                <tr>
+                  <td class="py-2 pl-4 pr-3 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm font-semibold text-gray-900">NET RETURN</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-semibold text-gray-900">$705K</td>
+                </tr>
+                <tr>
+                  <td class="py-2 pl-4 pr-3 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm text-gray-500"></td>
+                  <td class="px-2 py-2 text-sm font-semibold text-gray-900">BOND EXPENSES</td>
+                  <td class="px-2 py-2 text-sm text-right whitespace-nowrap font-semibold text-gray-900">$5.61M</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="bg-white mt-8">
+    <div class="mx-auto max-w-7xl px-6 py-8 lg:px-8">
+      <div class="grid grid-cols-[auto_1fr] gap-x-4 gap-y-6">
+        <!-- Levine Planning Strategies Logo -->
+        <div class="flex items-center justify-center">
+          <a href="https://rocklandmaine.gov/" target="_blank" rel="noopener noreferrer">
+            <img class="h-9" src="images/client/client-logo.png" alt="Rockland" />
+          </a>
+        </div>
+        <!-- Levine Planning Strategies Text -->
+        <div class="flex items-center">
+          <span class="text-sm text-gray-600">City of Rockland, a vibrant City located in the heart of Midcoast Maine, on the Penobscot Bay, and is the year-round home to over 7,000 residents.</span>
+        </div>
+      
+        <!-- Levine Planning Strategies Logo -->
+        <div class="flex items-center justify-center">
+          <a href="https://www.levineplans.com/" target="_blank" rel="noopener noreferrer">
+            <img class="h-9" src="images/theme/lps.jpg" alt="Levine Planning Strategies" />
+          </a>
+        </div>
+        <!-- Levine Planning Strategies Text -->
+        <div class="flex items-center">
+          <span class="text-sm text-gray-600">Levine Planning Strategies, planning and policy consultants focused on housing, growth, and land use solutions.</span>
+        </div>
+
+        <!-- CommunityScale Logo -->
+        <div class="flex items-center justify-center">
+          <a href="https://communityscale.io/" target="_blank" rel="noopener noreferrer">
+            <img class="h-9" src="https://raw.githubusercontent.com/CommunityScale/media-kit/main/svg/communityscale-logo-rounded-white-on-black.svg" alt="CommunityScale" />
+          </a>
+        </div>
+        <!-- CommunityScale Text (center vertically) -->
+        <div class="flex items-center">
+          <span class="text-sm text-gray-600">CommunityScale is an urban planning consultancy focused on helping communities across the country improve equity, economic mobility, and housing attainability.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    function togglePropertyDetails() {
+      const details = document.getElementById('propertyDetails');
+      const chevron = document.getElementById('chevronIcon');
+
+      details.classList.toggle('hidden');
+      chevron.classList.toggle('rotate-180');
+    }
+
+    // Add event listener for property details toggle
+    document.getElementById('detailsToggle').addEventListener('click', togglePropertyDetails);
+  </script>
+</body>
+
+</html>
